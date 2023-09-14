@@ -1,0 +1,15 @@
+[package]
+name = "aws_sqs_types"
+version = "0.1.1"
+edition = "2021"
+description = "AWS SQS struct that works well for Rust Lambdas"
+readme = "README.md"
+license = "MIT"
+authors = ["j-mendez <jeff@a11ywatch.com>"]
+categories = ["web-programming"]
+keywords = ["aws-sqs", "data-structures"]
+include = ["src/*", "LICENSE", "README.md"]
+
+[dependencies]
+bytes = { version = "1.5.0", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
